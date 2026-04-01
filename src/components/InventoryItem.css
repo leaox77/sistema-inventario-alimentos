@@ -1,0 +1,147 @@
+.inventory-item {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-left: 4px solid #28a745;
+}
+
+.inventory-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-item.low-stock {
+  border-left-color: #ffc107;
+  background: #fff8e7;
+}
+
+.inventory-item.out-of-stock {
+  border-left-color: #dc3545;
+  background: #ffe7e7;
+  opacity: 0.7;
+}
+
+.item-info h3 {
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.category {
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 3px;
+}
+
+.price {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.quantity-display {
+  text-align: right;
+}
+
+.quantity-number {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-right: 5px;
+}
+
+.quantity-unit {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.stock-badge {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.stock-badge.in-stock {
+  background: #d4edda;
+  color: #155724;
+}
+
+.stock-badge.low-stock {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.stock-badge.out-of-stock {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.item-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+  background: #e9ecef;
+  transform: scale(1.1);
+}
+
+.delete-btn:hover {
+  background: #f8d7da;
+  transform: scale(1.1);
+}
+
+.quantity-edit {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.quantity-edit input {
+  width: 70px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.save-btn, .cancel-btn {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-btn {
+  background: #28a745;
+  color: white;
+}
+
+.cancel-btn {
+  background: #dc3545;
+  color: white;
+}
