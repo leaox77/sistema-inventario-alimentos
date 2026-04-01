@@ -58,3 +58,7 @@ npm run dev
 yarn dev
 ```
 4. Abre tu navegador y visita `http://localhost:5173` para ver la aplicación en acción.
+
+5. Una captura de como se ve:
+<img width="1266" height="907" alt="image" src="https://github.com/user-attachments/assets/92f996d0-9f13-42dc-9a5a-915f2d1747b9" />
+
